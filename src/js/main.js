@@ -24,7 +24,7 @@ const main = () => {
     })
   });
 
-  window.addEventListener('scroll', debounce(checkContent, 15));
+  window.addEventListener('scroll', debounce(checkContent, 10));
 
 
 }

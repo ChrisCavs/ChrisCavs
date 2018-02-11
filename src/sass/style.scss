@@ -286,7 +286,7 @@ header {
   .fadeLeft {
     opacity: 0;
     transform: translateX(-10%);
-    transition: all 0.6s;
+    transition: all 0.4s;
   }
 
   .fadeLeft.active {
@@ -297,7 +297,7 @@ header {
   .fadeRight {
     opacity: 0;
     transform: translateX(10%);
-    transition: all 0.6s;
+    transition: all 0.4s;
   }
 
   .fadeRight.active {
