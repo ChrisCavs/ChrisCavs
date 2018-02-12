@@ -23,10 +23,7 @@ const main = () => {
 
   //listen for the left-side transition, then transition the right side
   fadeRight.forEach(item => {
-
-    item.previousSibling.addEventListener('transitionend', function() {
-      item.classList.add('active');
-    })
+    item.previousSibling.addEventListener('transitionend', () => item.classList.add('active'));
   });
 
   //checkContent when page loads, then check for elements as the user scrolls

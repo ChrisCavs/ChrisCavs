@@ -1,0 +1,34 @@
+.contact {
+  padding-top: 100px;
+  margin-bottom: 200px;
+
+  border-top: 2.5px solid $red;
+}
+
+.contact-links-container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
+}
+
+.contact-content {
+  display: flex;
+
+  margin-right:4%;
+  margin-left: 4%;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  transition: 0.4s;
+}
+
+    .contact-content:hover {
+      color: $red;
+      opacity: 0.75;
+    }
+
+.contact-content p {
+  margin-left: 6px;
+}

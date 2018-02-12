@@ -25,7 +25,7 @@ const smoothScroll = (destination) => {
 
     //simple linear scroll
     window.scrollTo(0,currentScroll);
-    currentScroll+=30;
+    currentScroll+=40;
 
     if(currentScroll >= destScroll || currentScroll == maxScroll) {
       clearInterval(int);

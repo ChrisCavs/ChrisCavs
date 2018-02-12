@@ -1,0 +1,25 @@
+@include min($tablet) {
+  .fade-left {
+    opacity: 0;
+    transform: translateX(-10%);
+
+    transition: all 0.4s;
+  }
+
+    .fade-left.active {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+
+  .fade-right {
+    opacity: 0;
+    transform: translateX(10%);
+
+    transition: all 0.4s;
+  }
+
+    .fade-right.active {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
