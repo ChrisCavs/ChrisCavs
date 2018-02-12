@@ -1,0 +1,66 @@
+.resume {
+  padding-top: 100px;
+  margin-bottom: 100px;
+
+  border-top: 2.5px solid $red;
+}
+
+.resume-container {
+  @include min($tablet) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
+}
+
+.resume-container-left {
+  @include min($tablet) {
+    width: 30%;
+  }
+}
+
+.resume-container-right {
+  @include min($tablet) {
+    width: 70%;
+  }
+}
+
+.resume-title {
+  margin-top: 16px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  @include min($tablet) {
+    margin-left: 16px;
+    margin-top: 2px;
+  }
+}
+
+.resume-subtitle {
+  margin-bottom: 30px;
+  margin-top: 6px;
+
+  font-size: 14px;
+  font-style: italic;
+
+  @include min($tablet) {
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+.resume-bullets {
+  margin-bottom: 30px;
+  margin-left: 32px;
+
+  font-size: 12px;
+
+  @include min($tablet) {
+    margin-left: 64px;
+    font-size: 14px;
+  }
+}

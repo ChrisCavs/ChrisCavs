@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.chris {
+  font-size: 30px;
+  font-weight: 700;
+  color: $blue;
+
+  border-bottom: 3px solid $red;
+}
+
+.cavs {
+  font-size: 30px;
+  font-weight: 700;
+  color: $red;
+}
+
+nav {
+  display: flex;
+}
+
+nav button {
+  font-size: 16px;
+  font-weight: bold;
+  color: $blue;
+
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+
+  transition-duration: 0.4s;
+}
+    nav button:hover {
+      color: $red;
+    }
+
+.nav-projects {
+  margin-right: 30px;
+}
