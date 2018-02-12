@@ -37,7 +37,7 @@ h2 {
 header {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 
@@ -53,6 +53,29 @@ header {
   font-size: 30px;
   font-weight: 700;
   color: #EF5322;
+}
+
+nav {
+  display: flex;
+}
+
+nav button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1F1E38;
+
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+
+  transition-duration: 0.4s;
+}
+    nav button:hover {
+      color: #EF5322;
+    }
+
+.nav-projects {
+  margin-right: 30px;
 }
 
 /*=====Content Formatting-> Background=====*/
@@ -132,7 +155,7 @@ header {
     justify-content: space-between;
 
     margin-left: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 

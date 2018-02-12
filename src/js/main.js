@@ -1,6 +1,9 @@
 import {debounce} from './debounce';
+import {smoothScroll} from './smoothScroll';
 
 const main = () => {
+
+  checkContent();
 
   const fadeLeft = Array.from(document.querySelectorAll('.fadeLeft'));
   const fadeRight = Array.from(document.querySelectorAll('.fadeRight'));
@@ -25,6 +28,14 @@ const main = () => {
   });
 
   window.addEventListener('scroll', debounce(checkContent, 10));
+
+  document.querySelector('.nav-projects').addEventListener('click', function() {
+    smoothScroll('projects');
+  })
+
+  document.querySelector('.nav-contact').addEventListener('click', function() {
+    smoothScroll('contact');
+  })
 
 
 }
