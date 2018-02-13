@@ -23,8 +23,9 @@ const main = () => {
     item.previousSibling.addEventListener('transitionend', () => item.classList.add('active'))
   })
 
-  //checkContent when page loads, then check for elements as the user scrolls
-  checkContent()
+  //checkContent on page-load, then check for elements as the user scrolls
+  //added slight timeout for better user experience
+  setTimeout(checkContent, 200)
   window.addEventListener('scroll', debounce(checkContent, 10))
 
   //listeners for smooth anchor scrolling
