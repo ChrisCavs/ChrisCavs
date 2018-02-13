@@ -9,8 +9,6 @@ const main = () => {
   //check if content is in view, then fade it in
   const checkContent = () => {
 
-    if(!fadeLeft) return
-
     fadeLeft.forEach(item => {
 
       let slideInAt = (window.scrollY + window.innerHeight - 100)
