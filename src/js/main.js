@@ -14,7 +14,6 @@ const main = () => {
     fadeLeft.forEach(item => {
 
       let slideInAt = (window.scrollY + window.innerHeight - 100);
-
       if (slideInAt >= item.offsetTop) {
         item.classList.add('active');
       }
