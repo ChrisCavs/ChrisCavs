@@ -11,6 +11,7 @@
 
     @include min($tablet) {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
 }
@@ -25,7 +26,7 @@
   transition: 0.3s;
 
     @include min($tablet) {
-      width: 30%;
+      width: 45%;
 
       margin-top: 45px;
     }
