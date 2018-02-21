@@ -1,4 +1,3 @@
-import {debounce} from './debounce'
 import {smoothScroll} from './smoothScroll'
 
 const main = () => {
@@ -26,7 +25,7 @@ const main = () => {
   //checkContent on page-load, then check for elements as the user scrolls
   //added slight timeout for better user experience
   setTimeout(checkContent, 200)
-  window.addEventListener('scroll', debounce(checkContent, 10))
+  window.addEventListener('scroll', checkContent)
 
   //listeners for smooth anchor scrolling
   document.querySelector('.nav-projects').addEventListener('click', () => smoothScroll('projects'))
