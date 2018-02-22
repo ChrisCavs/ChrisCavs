@@ -1,7 +1,7 @@
 const smoothScroll = (destination) => {
 
-  let start
-  let currentScroll = start = document.documentElement.scrollTop || document.body.scrollTop
+  let start = document.documentElement.scrollTop || document.body.scrollTop
+  let currentScroll = start
   let ticker = 0
 
   //find the destination element and its scroll position
@@ -40,7 +40,7 @@ const smoothScroll = (destination) => {
 
   //define loop end
   function end () {
-    destElement.focus()
+    window.scrollTo(0,destScroll)
   }
 
   //start the loop
