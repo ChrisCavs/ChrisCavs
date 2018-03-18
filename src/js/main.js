@@ -2,30 +2,23 @@ import {smoothScroll} from './smoothScroll'
 
 const main = () => {
 
-  const fadeLeft = Array.from(document.querySelectorAll('.fade-left'))
-  const fadeRight = Array.from(document.querySelectorAll('.fade-right'))
+  const fadeLeft = document.querySelector('.fade-left')
+  const fadeRight = document.querySelector('.fade-right')
 
   //check if content is in view, then fade it in
   const checkContent = () => {
 
-    fadeLeft.forEach(item => {
-
-      let slideInAt = (window.scrollY + window.innerHeight - 100)
-      if (slideInAt >= item.offsetTop) {
-        item.classList.add('active')
-      }
-    })
+    let slideInAt = (window.scrollY + window.innerHeight - 100)
+    if (slideInAt >= fadeLeft.offsetTop) {
+      fadeLeft.classList.add('active')
+    }
   }
 
   //listen for the left-side transition, then transition the right side
-  fadeRight.forEach(item => {
-    item.previousSibling.addEventListener('transitionend', () => item.classList.add('active'))
-  })
+  fadeLeft.addEventListener('transitionend', () => fadeRight.classList.add('active'))
 
-  //checkContent on page-load, then check for elements as the user scrolls
-  //added slight timeout for better user experience
+  //checkContent on page-load
   setTimeout(checkContent, 200)
-  window.addEventListener('scroll', checkContent)
 
   //listeners for smooth anchor scrolling
   document.querySelector('.nav-projects').addEventListener('click', () => smoothScroll('projects'))
