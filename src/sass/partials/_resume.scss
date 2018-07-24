@@ -57,10 +57,9 @@
   margin-bottom: 30px;
   margin-left: 32px;
 
-  font-size: 12px;
+  font-size: 16px;
 
   @include min($tablet) {
     margin-left: 64px;
-    font-size: 14px;
   }
 }

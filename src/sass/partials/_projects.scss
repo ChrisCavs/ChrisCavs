@@ -8,12 +8,6 @@
 .projects-container {
   padding-bottom: 20px;
   margin-top: 30px;
-
-    @include min($tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
 }
 
 .projects-content {
@@ -23,20 +17,17 @@
 
   padding: 8px;
 
-  cursor: pointer;
-
   transition: 0.3s;
 
     @include min($tablet) {
-      width: 47%;
-
       margin-top: 45px;
     }
 }
 
-    .projects-content:hover {
-      opacity: 0.6;
-    }
+.projects-content-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .projects-content-title {
   margin-bottom: 30px;
@@ -45,15 +36,19 @@
   font-weight: 700;
 }
 
+.projects-content-image {
+  width: 50%;
+}
+
 .projects-content-image img {
   width: 100%;
   height: auto;
 }
 
 .projects-content-body {
-  width: 70%;
+  width: 45%;
   margin-top: 30px;
 
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
