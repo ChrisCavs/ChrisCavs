@@ -6,7 +6,7 @@ header {
 }
 
 .chris {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   color: $blue;
 
@@ -14,7 +14,7 @@ header {
 }
 
 .cavs {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   color: $red;
 }
@@ -24,13 +24,14 @@ nav {
 }
 
 nav button {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   color: $blue;
 
   background-color: inherit;
   border: none;
   cursor: pointer;
+  outline: none;
 
   transition-duration: 0.4s;
 }

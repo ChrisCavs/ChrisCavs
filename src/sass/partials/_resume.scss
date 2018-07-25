@@ -1,11 +1,13 @@
 .resume {
-  padding-top: 100px;
+  padding-top: 70px;
   margin-bottom: 70px;
 
   border-top: 2.5px solid $red;
 }
 
 .resume-container {
+  margin-bottom: 40px;
+
   @include min($tablet) {
     display: flex;
     justify-content: space-between;
@@ -17,20 +19,20 @@
 
 .resume-container-left {
   @include min($tablet) {
-    width: 30%;
+    width: 40%;
   }
 }
 
 .resume-container-right {
   @include min($tablet) {
-    width: 70%;
+    width: 60%;
   }
 }
 
 .resume-title {
   margin-top: 16px;
 
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 
   @include min($tablet) {
@@ -40,24 +42,21 @@
 }
 
 .resume-subtitle {
-  margin-bottom: 28px;
   margin-top: 6px;
 
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
 
   @include min($tablet) {
     margin-left: 16px;
     margin-top: 16px;
-    margin-bottom: 24px;
   }
 }
 
 .resume-bullets {
-  margin-bottom: 30px;
-  margin-left: 32px;
+  margin: 10px 0 30px 30px;
 
-  font-size: 16px;
+  font-size: 18px;
 
   @include min($tablet) {
     margin-left: 64px;

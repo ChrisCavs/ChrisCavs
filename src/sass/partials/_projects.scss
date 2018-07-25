@@ -14,8 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 8px;
+  margin-bottom: 45px;
 
   transition: 0.3s;
 
@@ -25,19 +24,23 @@
 }
 
 .projects-content-container {
-  display: flex;
-  justify-content: space-between;
+  @include min($tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .projects-content-title {
   margin-bottom: 30px;
 
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .projects-content-image {
-  width: 50%;
+  @include min($tablet) {
+    width: 50%;
+  }
 }
 
 .projects-content-image img {
@@ -46,9 +49,12 @@
 }
 
 .projects-content-body {
-  width: 45%;
   margin-top: 30px;
-
+  
   font-size: 16px;
   text-align: center;
+
+    @include min($tablet) {
+      width: 45%;
+    }
 }
