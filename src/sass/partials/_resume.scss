@@ -1,13 +1,11 @@
 .resume {
-  padding-top: 70px;
-  margin-bottom: 70px;
+  padding-top: 100px;
+  margin-bottom: 100px;
 
   border-top: 2.5px solid $red;
 }
 
 .resume-container {
-  margin-bottom: 40px;
-
   @include min($tablet) {
     display: flex;
     justify-content: space-between;
@@ -27,6 +25,10 @@
   @include min($tablet) {
     width: 60%;
   }
+}
+
+.education-container {
+  margin-bottom: 20px;
 }
 
 .resume-title {
@@ -49,7 +51,7 @@
 
   @include min($tablet) {
     margin-left: 16px;
-    margin-top: 16px;
+    margin-top: 10px;
   }
 }
 

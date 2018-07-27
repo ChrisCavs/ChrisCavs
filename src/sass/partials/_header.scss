@@ -34,10 +34,11 @@ nav button {
   outline: none;
 
   transition-duration: 0.4s;
+
+  &:hover {
+    color: $red;
+  }
 }
-    nav button:hover {
-      color: $red;
-    }
 
 .nav-projects {
   margin-right: 30px;
