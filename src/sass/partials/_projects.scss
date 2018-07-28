@@ -1,18 +1,17 @@
 .projects {
   padding-top: 100px;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
 
   border-top: 2.5px solid $red;
 }
 
 
 .projects-container {
-  padding-bottom: 20px;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .projects-content-container {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   @include min($tablet) {
     display: flex;
     justify-content: space-between;
@@ -21,14 +20,14 @@
 
 .projects-content {
   @include min($tablet){
-    width: 45%;
+    width: 40%;
   }
 }
 
 .projects-content-title {
   margin: 30px 0;
 
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   text-align: center;
 
@@ -64,15 +63,12 @@
 
 .project-links {
   display: flex;
-  justify-content: center;
   align-items: center;
 
   margin-top: 20px;
 
   a {
-    margin: 0 10px;
-
-    font-size: 20px;
-    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 0;
   }
 }

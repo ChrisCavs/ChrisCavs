@@ -23,23 +23,6 @@ nav {
   display: flex;
 }
 
-nav button {
-  font-size: 24px;
-  font-weight: bold;
-  color: $blue;
-
-  background-color: inherit;
-  border: none;
-  cursor: pointer;
-  outline: none;
-
-  transition-duration: 0.4s;
-
-  &:hover {
-    color: $red;
-  }
-}
-
 .nav-projects {
   margin-right: 30px;
 }

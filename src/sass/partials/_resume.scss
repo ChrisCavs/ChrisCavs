@@ -1,6 +1,6 @@
 .resume {
   padding-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 
   border-top: 2.5px solid $red;
 }
@@ -64,4 +64,30 @@
   @include min($tablet) {
     margin-left: 64px;
   }
+}
+
+.resume-links {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.a-contact {
+    padding: 10px;
+    margin: 0 10px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    border: 1px solid $blue;
+    border-radius: 5px;
+
+    transition-duration: 0.3s;
+
+    cursor: pointer;
+    background-color: transparent;
+
+    &:hover {
+      color: $red;
+    }
 }
