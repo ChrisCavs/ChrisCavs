@@ -35,7 +35,7 @@
 .resume-title {
   margin-top: 16px;
 
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 
   @include min($tablet) {
@@ -47,7 +47,7 @@
 .resume-subtitle {
   margin-top: 6px;
 
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
 
   @include min($tablet) {
@@ -57,12 +57,12 @@
 }
 
 .resume-bullets {
-  margin: 10px 0 30px 30px;
+  margin: 10px 0 30px 60px;
 
-  font-size: 18px;
+  font-size: 19px;
 
   @include min($tablet) {
-    margin-left: 64px;
+    margin-left: 80px;
   }
 }
 
