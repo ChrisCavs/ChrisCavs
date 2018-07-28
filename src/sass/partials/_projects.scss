@@ -34,6 +34,8 @@
 
   @include min ($tablet) {
     margin-top: 0;
+
+    text-align: left;
   }
 }
 
@@ -51,6 +53,26 @@
 .projects-content-body {
   margin-top: 30px;
   
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
+  line-height: 1.5;
+
+  @include min($tablet) {
+    text-align: left;
+  }
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+
+  a {
+    margin: 0 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
