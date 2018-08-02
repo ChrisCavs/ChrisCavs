@@ -20,6 +20,7 @@
 }
 
 .projects-content {
+
   @include min($tablet){
     width: 40%;
   }
@@ -65,11 +66,31 @@
 .project-links {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   margin-top: 20px;
+
+  @include min($tablet) {
+    justify-content: flex-start;
+  }
 
   a {
     margin-right: 20px;
     margin-left: 0;
+  }
+}
+
+.hide-mobile {
+  display: none;
+
+  @include min($tablet) {
+    display: block;
+  }
+}
+
+.hide-desktop {
+
+  @include min($tablet) {
+    display: none;
   }
 }

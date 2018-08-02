@@ -17,8 +17,12 @@
 }
 
 .resume-container-left {
+
+  margin-top: 80px;
+
   @include min($tablet) {
     width: 40%;
+    margin-top: 0;
   }
 }
 
@@ -74,7 +78,7 @@
 
 .a-contact {
     padding: 10px;
-    margin: 0 10px;
+    margin: 10px;
 
     font-size: 18px;
     font-weight: 500;
@@ -86,6 +90,10 @@
 
     cursor: pointer;
     background-color: transparent;
+
+    @include min($tablet) {
+      margin: 0 10px;
+    }
 
     &:hover {
       color: $red;

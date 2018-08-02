@@ -1,8 +1,19 @@
 header {
-  display: flex;
-  justify-content: space-between;
+  @include min($tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   margin-top: 50px;
   margin-bottom: 80px;
+}
+
+.chriscavs {
+  margin-bottom: 40px;
+
+  @include min($tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .chris {
@@ -20,9 +31,20 @@ header {
 }
 
 nav {
-  display: flex;
+  @include min($tablet) {
+
+    display: flex;
+  }
 }
 
 .nav-projects {
   margin-right: 30px;
+}
+
+.view-resume-button {
+  display: inline-block;
+
+  @include min($tablet) {
+    display: inline;
+  }
 }
