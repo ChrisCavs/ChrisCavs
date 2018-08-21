@@ -1,0 +1,11 @@
+.open-source {
+  @include min($tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.open-source-project {
+  flex-basis: 40%;
+}

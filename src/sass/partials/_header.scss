@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
   }
-
+  
   margin-top: 50px;
   margin-bottom: 80px;
 }
@@ -31,8 +31,9 @@ header {
 }
 
 nav {
-  @include min($tablet) {
+  display: none;
 
+  @include min($tablet) {
     display: flex;
   }
 }
