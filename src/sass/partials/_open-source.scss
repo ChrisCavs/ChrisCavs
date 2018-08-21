@@ -1,4 +1,11 @@
 .open-source {
+  padding-top: 80px;
+  border-top: 2.5px solid #ef5322;
+}
+
+.open-source-container {
+  margin-top: 80px;
+
   @include min($tablet) {
     display: flex;
     justify-content: space-between;
@@ -7,5 +14,6 @@
 }
 
 .open-source-project {
-  flex-basis: 40%;
+  flex-basis: 45%;
+  margin-bottom: 80px;
 }
